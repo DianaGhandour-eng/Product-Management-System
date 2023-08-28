@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CRUDS | Product Management Systemّ</title>
-    <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="style.css" />
     <style></style>
   </head>
   <body>
@@ -17,10 +17,30 @@
       <div class="input">
         <input placeholder="Title" type="text" id="title" />
         <div class="price">
-          <input onkeyup="getTotal()"type="number"id="price"placeholder="Price"/>
-          <input onkeyup="getTotal()" type="number" id="taxes" placeholder="Taxes"/>
-          <input onkeyup="getTotal()" type="number" id="ads" placeholder="Ads"/>
-          <input onkeyup="getTotal()" type="number" id="discount" placeholder="Discount"/>
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            id="price"
+            placeholder="Price"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            id="taxes"
+            placeholder="Taxes"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            id="ads"
+            placeholder="Ads"
+          />
+          <input
+            onkeyup="getTotal()"
+            type="number"
+            id="discount"
+            placeholder="Discount"
+          />
           <small id="Total"></small>
         </div>
         <input type="number" id="count" placeholder="Count" />
@@ -31,8 +51,12 @@
         <div class="searchblock">
           <input type="text" id="search" placeholder="Search" />
           <div class="btnsearch">
-            <button onclick="getSearchMood(this.id)"  id="searchtitle">Search By Title</button>
-            <button onclick="getSearchMood(this.id)" id="searchcategory">Search By Category</button>
+            <button onclick="getSearchMood(this.id)" id="searchtitle">
+              Search By Title
+            </button>
+            <button onclick="getSearchMood(this.id)" id="searchcategory">
+              Search By Category
+            </button>
           </div>
         </div>
         <table>
@@ -48,8 +72,8 @@
             <th>Update</th>
             <th>Delete</th>
           </tr>
-        <tbody id="tbody" >
-        <!-- <tr>
+          <tbody id="tbody">
+            <!-- <tr>
         <td>1</td>
         <td>samsung</td>
         <td>1000</td>
